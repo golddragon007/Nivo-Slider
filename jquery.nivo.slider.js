@@ -85,7 +85,9 @@
     slider.append(sliderImg);
 
     // Set fix size to disable page jumps when changing images.
-    slider.css("height", slider.height());
+    $(document).ready(function() {
+      slider.css("height", slider.height());
+    });
 
     // Detect Window Resize
     $(window).resize(function() {
@@ -94,7 +96,7 @@
       $('.nivo-slice').remove();
       $('.nivo-box').remove();
       // Enable to resize by the browser to the correct size.
-      slider.css("height", "auto");
+      slider.css("height", 'auto');
       // Set back the fix size to disable page jumps when changing images.
       slider.css("height", slider.height());
     });
