@@ -1,6 +1,8 @@
 # Nivo Slider
 
-This is the original Nivo Slider with Optix Solutions optimization, but I fixed bug which was created when Optix Solutions optimised the slider.
+This is the original Nivo Slider with Optix Solutions optimization, but I fixed bug which was created when Optix Solutions optimised the slider and also there's some other fixes/modifications too.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Nivo Slider is world renowned as the most beautiful and easy to use image slider on the market. There is literally no better way to make your website look totally stunning.
 
