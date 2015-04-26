@@ -84,12 +84,19 @@
     sliderImg.attr('src', vars.currentImage.attr('src')).css({display: 'block'});
     slider.append(sliderImg);
 
+    // Set fix size to disable page jumps when changing images.
+    slider.css("height", slider.height());
+
     // Detect Window Resize
     $(window).resize(function() {
       slider.children('img').width(slider.width());
       $('img.nivo-main-image').stop().height('auto');
       $('.nivo-slice').remove();
       $('.nivo-box').remove();
+      // Enable to resize by the browser to the correct size.
+      slider.css("height", "auto");
+      // Set back the fix size to disable page jumps when changing images.
+      slider.css("height", slider.height());
     });
 
     //Create caption
@@ -413,7 +420,6 @@
         totalBoxes = '',
         boxes = '';
 
-      console.log(currentEffect);
       if(currentEffect === 'sliceDown' || currentEffect === 'sliceDownRight' || currentEffect === 'sliceDownLeft'){
         createSlices(slider, settings, vars);
         timeBuff = 0;
